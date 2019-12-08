@@ -1,0 +1,21 @@
+language: php
+
+sudo: false
+
+php:
+  - 7.2
+  - 7.3
+  - 7.4
+  - nightly
+
+install:
+  - if [[ $TRAVIS_PHP_VERSION = nightly ]]; then export COMPOSER_FLAGS="--ignore-platform-reqs"; fi
+  - composer update $COMPOSER_FLAGS
+
+
+script:
+  - vendor/bin/phpunit
+  - vendor/bin/infection --threads=8 --min-msi=100
+  - vendor/bin/phpcs
+  - vendor/bin/phpstan analyse src tests --level=max
+  - vendor/bin/psalm

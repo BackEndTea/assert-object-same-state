@@ -1,0 +1,38 @@
+{
+    "name": "backendtea/assert-object-same-state",
+    "description": "PHPUnit assertion helper to allow asserting objects are the same",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "BackEndTea",
+            "email": "gertp93@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "doctrine/coding-standard": "^6.0",
+        "infection/infection": "^0.15.0",
+        "phpstan/extension-installer": "^1.0",
+        "phpstan/phpstan": "^0.12.1",
+        "phpstan/phpstan-phpunit": "^0.12.1",
+        "phpstan/phpstan-strict-rules": "^0.12.0",
+        "phpunit/phpunit": "^8.4",
+        "vimeo/psalm": "^3.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "BackEndTea\\SameObject\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BackEndTea\\SameObject\\Test\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

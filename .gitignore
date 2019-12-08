@@ -1,0 +1,6 @@
+.phpcs-cache
+.phpunit.result.cache
+vendor/
+.idea/
+composer.lock
+infection.log

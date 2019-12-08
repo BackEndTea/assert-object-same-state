@@ -1,0 +1,17 @@
+{
+    "timeout": 2,
+    "source": {
+        "directories": [
+            "src"
+        ],
+        "excludes": [
+            "ObjectHasSameStateAssertion.php"
+        ]
+    },
+    "logs": {
+        "text": "infection.log"
+    },
+    "mutators": {
+        "@default": true
+    }
+}
