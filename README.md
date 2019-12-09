@@ -1,5 +1,7 @@
 # Assert objects have same state
 
+![travis status](https://travis-ci.org/BackEndTea/assert-object-same-state.svg?branch=master)
+
 PHPUnit assertion helper to check if two objects have the same state.
 
 Please note that same state only refers to the state of the properties. 
